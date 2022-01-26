@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background:url(img/fundo_ecra.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;/*pour que l'image soit fixée*/
+}
+
+.menu{
+   
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+
+}
+.logo{
+    font-size: 40px;
+    text-shadow: 0 1px 10px  ;
+    color: white;
+
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li{
+    padding: 10px 20px;
+    position: relative;
+    }
+ .menu ul li a{
+     color: white;
+     text-decoration: none;
+     font-size: 20px;
+     transition: all 0.3s;
+    }
+    .menu ul li a:hover{
+        color:rgb(9, 21, 124);
+    }
+    .roman{
+        display: none;
+    }
+    .menu ul li:hover .roman{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 100%;
+    }
+
+    .menu ul li:hover .roman ul{
+     display: block;
+     margin: 10px;
+    }
+
+    .menu ul li:hover .roman ul li{
+    width: 100px;
+    padding: 15px;
+    } 
+
+    /*slider*/
+    .slider {
+        height: 250px;
+        margin: 100px;
+        position: relative;
+        /*width: 90%;*/
+        display: grid;
+        place-items: center;
+    }
+    .slide-track {
+        display: flex;
+        width: calc(250px * 14);
+        animation: scroll 40s linear infinite;
+    } 
+    /* pour pause le scroll*/
+    .slide-track:hover {
+        animation-play-state: paused;
+    } 
+    /*auto scroll*/
+
+    @keyframes scroll {
+        0%{
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc( -250px * 7));
+        }
+    }
+    .slide{
+        height: 200px;
+        width: 250px;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        perspective: 100px;
+    }  
+
+    img{
+        width: 100%;
+    }
+    /*image effect*/
+    img:hover{
+        transform: translateZ(20px);
+    }
+/*gradient shadows*/
+
+.slider::before,
+.slider::after {
+    /*background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);*/
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+.slider::before{
+    left: 0;
+    top: 0;
+}
+.slider::after{
+    left: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+section h1{
+    text-align: center;
+    font-size: 40px;
+}
+section h4 {
+    text-align:justify ;
+    margin: 20px 450px;
+    
+}
+section h3{
+    text-align: center;
+}
+section p{
+    text-align:justify ;
+    margin: 20px 450px;
+    
+}
+/*page reglementation*/
+.reg p{
+    text-align: justify;
+    margin: 20px 510px;
+    font-size: 20px;
+    color:rgb(20, 12, 1);
+}
+.reg h1{
+    text-align: center;
+    font-size: 45px;
+
+}
+.reg h2{
+    text-align: center;
+    font-size: 25px;
+
+}
+.concours21 img{
+    width: 70%;
+    margin-left: 300px;
+}
+
+
+
+
+
+
+
+
+
+/*footer*/
+footer{
+    margin: auto;
+    height: 80px;
+    width: 100%;
+    padding-top: 40px;
+    
+}    
+.reseaux_sociaux a img{
+    width: 64px;
+    padding: 10px;
+    align-items: center;
+}
+.reseaux_sociaux ul {
+    list-style: none;
+    display: flex;
+    padding: 0 10px;
+    justify-content: center;
+}
+.prodution{
+    text-align: center;
+}

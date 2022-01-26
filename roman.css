@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background:rgb(120, 120, 199);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;/*pour que l'image soit fixée*/
+    max-width:100%;
+    display: grid;
+    place-items: center;
+}
+
+.menu{
+   
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+
+}
+.logo{
+    font-size: 40px;
+    text-shadow: 0 1px 10px  ;
+    color: white;
+
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li{
+    padding: 10px 20px;
+    position: relative;
+    }
+ .menu ul li a{
+     color: white;
+     text-decoration: none;
+     font-size: 20px;
+     transition: all 0.3s;
+    }
+    .menu ul li a:hover{
+        color:rgb(9, 21, 124);
+    }
+    .roman{
+        display: none;
+    }
+    .menu ul li:hover .roman{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 100%;
+    }
+
+    .menu ul li:hover .roman ul{
+     display: block;
+     margin: 10px;
+    }
+
+    .menu ul li:hover .roman ul li{
+    width: 100px;
+    padding: 15px;
+    }
+    h1{
+        text-align: center;
+        font-size: 40px;
+        margin: 30px;
+        float: left;
+    }
+    .livre{
+        display: flexbox;
+        width: 1100px;
+    }
+    .livre p{
+        text-align:center;
+        padding-top: 35px;
+       
+
+    }
+    .livre img{
+        width: 300px;
+        height: 400px;
+    }
+    /*Tratament des img et texte*/
+    .rf1, .rf2, .rf3, .rf4{
+        height: 500px;
+    }
+
+    .livre h4{
+        text-align: center;
+        margin-top: 40px;
+        font-size: 50px;
+    }
+.img1{
+    float: left;
+    margin: 15px;
+    clear: both;
+}
+.img2{
+    float: right;
+    margin-top: 10px;
+    padding: 15px;
+}
+.img3{
+    float: left;
+    margin-top: 10px;
+}
+.img4{
+    float: right;
+    margin-top: 10px;
+   
+}
+/* input notes*/
+.notas{
+    padding: 20px;
+    display: flex;
+    padding-left: 10px;
+}
+.notas label{
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+.notar{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+footer{
+    margin: auto;
+    height: 80px;
+    width: 100%;
+    padding-top: 40px;
+    
+}    
+ .reseaux_sociaux img{
+    width: 64px;
+    height: 64px;
+    padding: 10px;
+    align-items: center;
+}
+.reseaux_sociaux ul {
+    list-style: none;
+    display: flex;
+    padding: 0 10px;
+    justify-content: center;
+}
+.prodution{
+    text-align: center;
+    align-items: center;
+}

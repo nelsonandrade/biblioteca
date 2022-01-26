@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:url(img/biblio1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    color: #323232;
+    border: none;
+}
+
+.menu{
+   
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+
+}
+.logo{
+    font-size: 40px;
+    text-shadow: 0 1px 10px  ;
+    color: white;
+
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li{
+    padding: 10px 20px;
+    position: relative;
+    }
+ .menu ul li a{
+     color: white;
+     text-decoration: none;
+     font-size: 20px;
+     transition: all 0.3s;
+    }
+    .menu ul li a:hover{
+        color:rgb(9, 21, 124);
+    }
+    .roman{
+        display: none;
+    }
+    .menu ul li:hover .roman{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 100%;
+    }
+
+    .menu ul li:hover .roman ul{
+     display: block;
+     margin: 10px;
+    }
+
+    .menu ul li:hover .roman ul li{
+    width: 100px;
+    padding: 15px;
+    }
+    
+
+
+input, label {
+  display: block;
+  outline: none;
+  width: 100%;
+}
+
+a {
+  color: #E60084;
+}
+
+
+
+/* form */
+#main-container {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(207, 144, 61);
+  border-radius: 10px;
+  padding: 25px;
+}
+
+#main-container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.6rem;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.full-box {
+  flex: 1 1 100%;
+  position: relative;
+}
+
+.half-box {
+  flex: 1 1 45%;
+  position: relative;
+}
+
+.spacing {
+  margin-right: 2.5%;
+}
+
+label {
+  font-weight: bold;
+  font-size: .8rem;
+}
+
+input {
+  border-bottom: 2px solid #323232;
+  padding: 10px;
+  font-size: .9rem;
+  margin-bottom: 40px;
+}
+
+input:focus {
+  border-color: #E60084;
+}
+
+input[type="submit"] {
+  background-color:  #804000;
+  color: #FFF;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  cursor: pointer;
+}
+
+#agreement {
+  margin-right: 5px;
+}
+
+#agreement, #agreement-label {
+  display: inline-block;
+  width: auto;
+}
+
+.error-validation {
+  color: #ff1a1a;
+  position: absolute;
+  top: 57px;
+  font-size: 12px;
+}
+
+.template {
+  display: none;
+}
+
+/*form inscription*/
+
+
+
+input, label {
+  display: block;
+  outline: none;
+  width: 100%;
+}
+
+a {
+  color: #E60084;
+}
+
+
+
+/* form */
+#main-container1 {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(207, 144, 61);
+  border-radius: 10px;
+  padding: 25px;
+}
+
+#main-container1 h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.6rem;
+}
+
+form1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.full-box1 {
+  flex: 1 1 100%;
+  position: relative;
+}
+.full-box2 {
+  flex: 1 1 100%;
+  position: relative;
+}
+
+.half-box1 {
+  flex: 1 1 45%;
+  position: relative;
+}
+
+.spacing1 {
+  margin-right: 2.5%;
+}
+
+label {
+  font-weight: bold;
+  font-size: .8rem;
+}
+
+input {
+  border-bottom: 2px solid #323232;
+  padding: 10px;
+  font-size: .9rem;
+  margin-bottom: 40px;
+}
+
+input:focus {
+  border-color: #804000;
+}
+
+input[type="button"] {
+  background-color: #804000;
+  color: #FFF;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  cursor: pointer;
+}
+
+#agreement {
+  margin-right: 5px;
+}
+
+#agreement, #agreement-label {
+  display: inline-block;
+  width: auto;
+}
+
+.error-validation {
+  color: #c40303;
+  position: absolute;
+  top: 57px;
+  font-size: 12px;
+}
+
+.template {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+footer{
+    margin: 100px auto;
+    height: 150px;
+    width: 100%;
+    padding-top: 10px;
+    background-color: rgb(207, 144, 61);
+    
+}    
+.reseaux_sociaux a img{
+    width: 64px;
+    padding: 10px;
+    align-items: center;
+    
+}
+.reseaux_sociaux ul {
+    list-style: none;
+    display: flex;
+    padding: 0 10px;
+    justify-content: center;
+}
+.prodution{
+    text-align: center;
+   
+}

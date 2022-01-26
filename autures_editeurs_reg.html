@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Autures & Editeurs</title>
+</head>
+<body>
+    <div class="menu">
+        <h1 class="logo">BBiblio</h1>
+        <ul>
+            <li> <a href="index.html">HOME</a></li>
+            <li> <a href="index.html">ROMAN</a>
+                <div class="roman">
+                    <ul>
+                        <li><a href="francais.html">Français</a></li>
+                        <li><a href="etranger.html">Étranger</a></li>
+                    </ul>
+                </div>
+            
+            </li>
+            <li> <a href="doc.html">DOCUMENTAIRE</a></li>
+            <li> <a href="bio.html">BIOGRAPHIE</a></li>
+            <li> <a href="autures_editeurs.html">AUTURES/EDITEURS</a></li>
+            <li> <a href="jury.html">JURY</a></li>
+            <li> <a href="reglem.html">RÉGLEMENTATION</a></li>
+            <li> <a href="#">CONTACT</a></li>
+        </ul>
+    </div>
+    <div id="main-container1">
+        <h1>Inscrivez-vous pour accéder au contenu</h1>
+        <form id="register-form" action="">
+          <div class="full-box1">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Votre e-mail" data-min-length="2" data-email-validate>
+          </div>
+          <div class="half-box spacing1">
+              <label for="name">Prenom</label>
+              <input type="text" name="name" id="name" placeholder="Votre prenom" data-required data-min-length="3" data-max-length="16">
+          </div>
+          <div class="half-box1">
+              <label for="lastname">Nom</label>
+              <input type="text" name="lastname" id="lastname" placeholder="Digite seu sobrenome" data-required data-only-letters>
+          </div>
+          <div class="half-box spacing1">
+            <label for="lastname">Mot de passe</label>
+            <input type="password" name="password" id="password" placeholder="Entrez Mot de Passe" data-password-validate data-required>
+          </div>
+          <div class="half-box1">
+            <label for="passconfirmation">Confirmation du mot de passe</label>
+            <input type="password" name="passconfirmation" id="passwordconfirmation" placeholder="Saisissez de nouveau le mot de passe " data-equal="password">
+          </div>
+          <div class="check">
+            <input type="checkbox" name="agreement" id="agreement">
+            <label for="agreement" id="agreement-label">J'ai lu et j'accepte  <a href="#">les conditions d'utilisation</a></label>
+          </div>
+          <div class="full-box2">
+             <a href="autures_editeurs.html"><input type="button" value="Retour" ></a>
+           <a href="autures_editeurs_reg.html"><input id="btn-submit" type="submit" value="Enregistrer"></a>
+          </div>
+        </form>
+      </div>
+      <p class="error-validation template"></p>
+      <script src="js/scripts.js"></script>
+
+
+
+    <footer>
+        <div class="reseaux_sociaux">
+            <ul class="sociais">
+                <li>
+                <a href="#"><img src="img/face1.png" alt="facebook"></a>
+                </li>
+                <li>
+                <a href="#" ><img src="img/insta.png" alt="instagram"></a>
+                </li>
+                <li>
+                    <a href="#"> <img src="img/twitter-outline.png" alt="twitter"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/whatsapp.png" alt="whatsapp"></a>
+                </li>
+            </ul>
+        </div>
+    <div class="prodution">
+        <h3>Prodution by</h3>
+       <p>&copy 2022 Nelson Andrade</p>
+    </div>
+</footer>
+
+</body>
+</html>
