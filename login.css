@@ -270,18 +270,25 @@ input[type="button"] {
 
 
 .contact-section{
-  width: 100%;
+  width: 90%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  background:#323232;;
+  margin-top: 150px;
+  float: left;
+  margin-left: 95px;
+  opacity: 0.9;
+  border-radius: 25px;
 }
 
 .contact-info{
-  color:whitesmoke;
+  color:white;
   max-width: 500px;
   line-height: 65px;
   padding-left: 50px;
+  padding-top: 30px;
   font-size: 18px;
+  font-style: bold;
+  
 }
 
 .contact-info i{
@@ -291,7 +298,7 @@ input[type="button"] {
 
 .contact-form{
   max-width: 700px;
-  margin-right: 50px;
+  margin-right: 150px;
 }
 
 .contact-info, .contact-form{
@@ -299,23 +306,25 @@ input[type="button"] {
 }
 
 .contact-form h2{
-  color: #fff;
+  color: rgb(214, 198, 198);
   text-align: center;
   font-size: 35px;
+  font-style: bold;
   text-transform: uppercase;
   margin-bottom: 30px;
+  margin-top: 10px;
+
 }
 
 .contact-form .text-box{
-  /*
-  color: #fff;*/
-  border: none;
+  color: rgb(36, 34, 34);
+  background:rgb(228, 223, 223);
   width: calc(50% - 10px);
   height: 50px;
   padding: 12px;
-  font-size: 15px;
+  font-size: 18px;
   border-radius: 5px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px rgba(218, 213, 213, 0.1);
   margin-bottom: 20px;
   opacity: 0.9;
 }
@@ -325,15 +334,14 @@ input[type="button"] {
 }
 
 .contact-form textarea{
- /* background: #000;*/
-  color: #fff;
-  border: none;
+  background: rgb(223, 216, 216);
+  color: rgb(253, 242, 242);
   width: 100%;
   padding: 12px;
-  font-size: 15px;
+  font-size: 18px;
   min-height: 200px;
   max-height: 400px;
-  resize: vertical;
+  /*resize: vertical;*/
   border-radius: 5px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
@@ -341,8 +349,8 @@ input[type="button"] {
 }
 
 .contact-form .send-btn{
-  float: right;
-  background: #2E94E3;
+  float: left;
+  background: #000;
   color: #fff;
   border: none;
   width: 120px;
@@ -358,7 +366,8 @@ input[type="button"] {
 }
 
 .contact-form .send-btn:hover{
-  background: #0582E3;
+  background: #dee0e2;
+  color: #000;
 }
 
 @media screen and (max-width: 950px){
@@ -379,51 +388,11 @@ input[type="button"] {
   }
 }
 
-/* alert msg
-
-.alert-success{
-  z-index: 1;
-  background: #D4EDDA;
-  font-size: 18px;
-  padding: 20px 40px;
-  min-width: 420px;
-  position: fixed;
-  right: 0;
-  top: 10px;
-  border-left: 8px solid #3AD66E;
-  border-radius: 4px;
-}
-
-.alert-error{
-  z-index: 1;
-  background: #FFF3CD;
-  font-size: 18px;
-  padding: 20px 40px;
-  min-width: 420px;
-  position: fixed;
-  right: 0;
-  top: 10px;
-  border-left: 8px solid #FFA502;
-  border-radius: 4px;
-}*/
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*footer*/
+
+
 footer{
-    margin: 100px auto;
+    margin: 280px auto;
     height: 150px;
     width: 100%;
     padding-top: 10px;
@@ -445,4 +414,33 @@ footer{
 .prodution{
     text-align: center;
    
+}
+/*footer page contact*/
+
+.f_contact{
+  margin: 730px auto;
+  height: 150px;
+  width: 100%;
+  padding-top: 10px;
+  background-color:#323232;
+  opacity: 0.9;
+
+  
+}    
+.rs_contact a img{
+  width: 64px;
+  padding: 10px;
+  align-items: center;
+  
+}
+.rs_contact ul {
+  list-style: none;
+  display: flex;
+  padding: 0 10px;
+  justify-content: center;
+}
+.prodution_contact {
+  text-align: center;
+  color: white;
+ 
 }
